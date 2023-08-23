@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width:100vw;
+    height:80px;
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+}
+.first-nav-part,.second-nav-part{
+    display: flex;
+    gap:20px
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+a:hover{
+    color:yellow;
+    font-size: 18px;
+}
+#hero{
+    height:100vh;
+    background-image: url(./image/Contact-Mobile.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero h1{
+    color:white;
+    font-size: 2rem;
+    background-color:rgb(128, 128, 128,0.5);
+}
+#about,#Services,#Specialization,#Teachers,#Plans,#Contacts,.contact{
+    width: 100vw;
+    padding: 80px 0px 10px;
+    background-color:#86cdd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+    gap: 50px;
+}
+h1{
+    color: white;
+    font-size: 2rem;
+}
+#about p{
+    padding: 10px;
+}
+#Services,#Teachers,#Contacts,.contact{
+    background-color:#053545;
+}
+.first-services-part,.second-services-part{
+    display: flex;
+    gap:10px
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box,.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid yellow;
+    border-radius: 5%;
+}
+.card .box{
+    border: none;
+}
+#Contacts,.contact{
+    gap: 0;
+    padding: 5px 0px;
+}
+#Teachers img{
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+#Plans{
+    gap: 15px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+    background-color:#053545;
+}
+.cont img{
+    width:60%;
+    margin-top: 10px;
+}
+li{
+    margin-left:-40px;
+    color: black;
+}
+.card2{
+    border: 2px solid white;
+    background-color: khaki;
+    margin: 0px 5px;
+}
+.border-radius{
+    border: 1px solid yellow;
+    border-radius: 5%;
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+    color: white;
+}
+@media (max-width:471px) {
+   a{
+    font-size:1rem;
+    }
+    #hero h1{
+        font-size: 1.5rem;
+    }
+}
